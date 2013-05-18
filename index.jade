@@ -1,0 +1,94 @@
+!!!5
+html
+    head
+        link(rel="stylesheet", type="text/css", href="public/css/bootstrap.min.css")
+        link(rel="stylesheet", type="text/css", href="public/css/index.css")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js")
+        script(src="public/js/index.js")
+
+    body
+        #fb-root
+        script
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=196755747068070";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+        #container
+            #front.slides 
+                img#logo(src='public/img/logo-s.gif')
+
+            // Remember to change members and about block
+            #about.slides
+
+                .row
+                    .span12
+                        p#claim
+                            | Life should be simple
+                            br
+                            br
+                            | 有人說，快樂的生活是一種哲學
+                            br
+                            | 有人說快樂的生活需要很多的金錢支持
+                            br
+                            | 但身於 hax4 的我們不這樣認為
+                            br
+                            br
+                            | 我們認為快樂的生活來自於簡單的生活
+                            br
+                            | 有簡單才能從中找到快樂
+                            br
+                            br
+                            | 想一想過去小時候
+                            br
+                            | 是不是在過去的簡單的生活裡
+                            br
+                            | 找到了很多現在無法取得的快樂呢
+                            br
+                            br
+                            | hax4 的我們致力於製作簡單的事物
+                            br
+                            | 畢竟這個生活已經太多事要我們選擇
+                            br
+
+            #members.slides
+                .wrapper
+                    ul.unstyled
+                        li.each-member.eragonj(data-name='eragonj')
+                        li.each-member.mioboo(data-name='mioboo')
+                        li.each-member.bu(data-name='bu')
+                        li.each-member.nuz(data-name='nuz')
+
+            #projects.slides This is slide 2
+
+            #contact.slides
+                .left
+                    form.form-horizontal
+                        fieldset
+                            legend Contact with us !
+                            .control-group
+                                label.control-label(for="name") Your Name :
+                                .controls
+                                    input#name.input-small(type="text", placeholder="Angelina") 
+                            .control-group
+                                label.control-label(for="email") Your Email :
+                                .controls
+                                    input#email.input-large(type="text", placeholder="angelina@abc.com") 
+                            .control-group
+                                label.control-label(for="message") Your Message :
+                                .controls
+                                    textarea#message(rows="15") 
+                                    // bug ?
+                            .form-actions
+                                button.btn.btn-primary.input-middle(type="submit") Submit to Hax4 !
+                .right
+                    form.form-horizontal
+                        legend Or you can leave comments to us ;)
+                    .fb-comments(data-href="http://hax4.in", data-width="470")
+                .clear
+                        
+            // #feedback.slides Feedback
+

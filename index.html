@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script src="public/js/index.js"></script>
+  </head>
+  <body>
+    <div id="fb-root">
+    </div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=196755747068070";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+</script>
+    <div id="container">
+      <div id="front" class="slides"><img id="logo" src="public/img/logo-s.gif">
+      </div>
+      <!-- Remember to change members and about block-->
+      <div id="about" class="slides">
+        <div class="row">
+          <div class="span12">
+            <p id="claim">Life should be simple
+<br><br>有人說，快樂的生活是一種哲學
+<br>有人說快樂的生活需要很多的金錢支持
+<br>但身於 hax4 的我們不這樣認為
+<br><br>我們認為快樂的生活來自於簡單的生活
+<br>有簡單才能從中找到快樂
+<br><br>想一想過去小時候
+<br>是不是在過去的簡單的生活裡
+<br>找到了很多現在無法取得的快樂呢
+<br><br>hax4 的我們致力於製作簡單的事物
+<br>畢竟這個生活已經太多事要我們選擇
+<br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="members" class="slides">
+        <div class="wrapper">
+          <ul class="unstyled">
+            <li data-name="eragonj" class="each-member eragonj">
+            </li>
+            <li data-name="mioboo" class="each-member mioboo">
+            </li>
+            <li data-name="bu" class="each-member bu">
+            </li>
+            <li data-name="nuz" class="each-member nuz">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="projects" class="slides">This is slide 2
+      </div>
+      <div id="contact" class="slides">
+        <div class="left">
+          <form class="form-horizontal">
+            <fieldset>
+              <legend>Contact with us !
+              </legend>
+              <div class="control-group">
+                <label for="name" class="control-label">Your Name :
+                </label>
+                <div class="controls">
+                  <input id="name" type="text" placeholder="Angelina" class="input-small">
+                </div>
+              </div>
+              <div class="control-group">
+                <label for="email" class="control-label">Your Email :
+                </label>
+                <div class="controls">
+                  <input id="email" type="text" placeholder="angelina@abc.com" class="input-large">
+                </div>
+              </div>
+              <div class="control-group">
+                <label for="message" class="control-label">Your Message :
+                </label>
+                <div class="controls">
+                  <textarea id="message" rows="15">
+                  </textarea>
+                  <!-- bug ?-->
+                </div>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary input-middle">Submit to Hax4 !
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="right">
+          <form class="form-horizontal">
+            <legend>Or you can leave comments to us ;)
+            </legend>
+          </form>
+          <div data-href="http://hax4.in" data-width="470" class="fb-comments">
+          </div>
+        </div>
+        <div class="clear">
+        </div>
+      </div>
+      <!-- #feedback.slides Feedback-->
+    </div>
+  </body>
+</html>
