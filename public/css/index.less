@@ -1,0 +1,106 @@
+body {
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+#container {
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.slides {
+    width: 100%;
+}
+
+#front {
+    background-color: #bb0104;
+    position: relative;
+
+    #logo {
+        position: absolute;
+        right: 0;
+        top: 25%;
+    }
+}
+
+#about {
+    background-color: #f08300;
+}
+
+#members {
+    background-color: #93b881;
+
+    ul {
+        margin: 0;
+    }
+
+    // Fix this later
+
+    li.each-member { 
+        float: left;
+        width: 250px;
+        height: 500px;
+        border: 1px solid white;
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 1;
+            transition: opacity 0.5s ease;
+            -webkit-transition: opacity 0.5s ease;
+        }
+    }
+
+    .eragonj {
+        background-image: url('../img/avatars/eragonj.jpeg');
+        background-position: 0 -10px;
+    }
+    .mioboo {
+        background-image: url('../img/avatars/mioboo.jpeg');
+        background-position: -150px 0px;
+    }
+    .bu {
+        background-image: url('../img/avatars/bu.jpeg');
+        background-position: -150px 0px;
+    }
+    .nuz {
+        background-image: url('../img/avatars/nuz.jpg');
+        background-position: -250px -360px;
+    }
+}
+
+#projects {
+
+    background-color: #e6b422;
+}
+
+#contact {
+
+    background-color: white;
+
+    .left {
+        width: 40%;
+        float: left;
+    }
+    
+    .right {
+        float:right;
+        border-left: 1px solid #EEE;
+    }
+    // background-color: #164a84;
+}
+
+.clear {
+    clear: both;
+}
+
+#claim {
+    margin: 0 auto;
+    margin-top: 2em;
+    font-size: 24px;
+    line-height: 24px;
+}
