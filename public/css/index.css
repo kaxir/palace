@@ -2,17 +2,48 @@ body {
   overflow: auto;
   overflow-x: hidden;
 }
+
+.logo-intro {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.logo-intro .logo-up,
+.logo-intro .logo-down {
+  position: relative;
+  height: 50%;
+  overflow: hidden;
+  background: white;
+}
+.logo-intro .logo-up .logo {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -300px;
+  margin-bottom: -150px;
+}
+.logo-intro .logo-down .logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -150px;
+}
+
 #container {
   margin: 0 auto;
 }
+
 .wrapper {
   margin: 0 auto;
   padding-top: 50px;
   padding-left: 50px;
 }
+
 .slides {
   width: 100%;
 }
+
 #front {
   background-color: #bb0104;
   position: relative;
@@ -22,9 +53,11 @@ body {
   right: 0;
   top: 25%;
 }
+
 #about {
   background-color: #f08300;
 }
+
 #members {
   background-color: #93b881;
 }
@@ -44,24 +77,26 @@ body {
   -webkit-transition: opacity 0.5s ease;
 }
 #members .eragonj {
-  background-image: url('../img/avatars/eragonj.jpeg');
+  background-image: url("../img/avatars/eragonj.jpeg");
   background-position: 0 -10px;
 }
 #members .mioboo {
-  background-image: url('../img/avatars/mioboo.jpeg');
+  background-image: url("../img/avatars/mioboo.jpeg");
   background-position: -150px 0px;
 }
 #members .bu {
-  background-image: url('../img/avatars/bu.jpeg');
+  background-image: url("../img/avatars/bu.jpeg");
   background-position: -150px 0px;
 }
 #members .nuz {
-  background-image: url('../img/avatars/nuz.jpg');
+  background-image: url("../img/avatars/nuz.jpg");
   background-position: -250px -360px;
 }
+
 #projects {
   background-color: #e6b422;
 }
+
 #contact {
   background-color: white;
 }
@@ -73,9 +108,11 @@ body {
   float: right;
   border-left: 1px solid #EEE;
 }
+
 .clear {
   clear: both;
 }
+
 #claim {
   margin: 0 auto;
   margin-top: 2em;
