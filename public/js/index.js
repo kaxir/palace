@@ -1,11 +1,11 @@
 $(document).ready(function() {
-    resizeAll();
-    
-    $('.each-member').bind('mouseenter', function() {
-        var name = $(this).data('name');
-        showMemberInfo( name );
-    });
 
+    // resize first
+    resizeAll();
+
+    // set scroll
+    $.localScroll();
+    
     // animate
     var delay = 1800;
 
@@ -13,7 +13,6 @@ $(document).ready(function() {
     $(".logo-down").addClass("animated fadeOutDownBig");
 
     setTimeout(function() {
-        console.log('x');
         $(".logo-intro").addClass("hide");
     }, delay + 1000);
 
@@ -34,9 +33,5 @@ function setLogoSize(h) {
 
 function setSlidesSize(h) {
     $('.slides').height( h ); 
-}
-
-function showMemberInfo( e ) {
-    console.log( e );
 }
 

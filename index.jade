@@ -10,6 +10,8 @@ html
         link(rel="stylesheet", type="text/css", href="public/css/index.css")
         script(src="public/vendor/jquery/jquery.min.js")
         script(src="public/vendor/jquery.stellar/jquery.stellar.min.js")
+        script(src="public/vendor/jquery.localScroll/jquery.localScroll.min.js")
+        script(src="public/vendor/jquery.scrollTo/jquery.scrollTo.min.js")
         script(src="public/js/index.js")
     body
         div.logo-intro
@@ -36,15 +38,15 @@ html
                     a(href="#star")
                         | &#9733;
 
-        div.slides.slide-about
+        div#about.slides.slide-about
 
-        div.slides.slide-works
+        div#works.slides.slide-works
             
-        div.slides.slide-opensource
+        div#opensource.slides.slide-opensource
 
-        div.slides.slide-contact
+        div#contact.slides.slide-contact
 
-        div.slides.slide-star
+        div#star.slides.slide-star
             div.slide-content
                 img.logo(src="public/img/hax4_logo.png")
                 div.slogan
