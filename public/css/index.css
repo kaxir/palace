@@ -54,6 +54,7 @@ body {
 .left-navigation ul li a {
   text-decoration: none;
   color: white;
+  display: block;
 }
 .left-navigation ul li.about {
   background-color: #ffcc99;
