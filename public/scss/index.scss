@@ -19,7 +19,7 @@ body {
         background: white;
 
         @include animation-duration(3s);
-        @include animation-delay(1s);
+        @include animation-delay(1.8s);
     }
 
     // logo size : 600x300
