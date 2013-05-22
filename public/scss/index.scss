@@ -4,10 +4,11 @@
 body {
     overflow: auto;
     overflow-x: hidden;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .logo-intro {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
@@ -46,7 +47,8 @@ body {
 }
 
 .left-navigation {
-    top: 30%;
+    top: 35%;
+    z-index: 9;
 
     ul {
         li {
@@ -92,6 +94,12 @@ body {
 
 .slides {
     width: 100%;
+    position: relative;
+    z-index: 8;
+
+    .slide-content {
+        position: absolute;
+    }
 }
 
 .slide-about {
@@ -112,6 +120,21 @@ body {
 
 .slide-star {
     background-color: #000000;
+
+    .slide-content {
+        left: 50%;
+        top: 50%;
+        margin-left: -300px;
+        margin-top: -164px;
+
+        .slogan {
+            font-size: 26px;
+            line-height: 28px;
+            text-align: center;
+            padding: 5px;
+            color: #fff;
+        }
+    }
 }
 
 
