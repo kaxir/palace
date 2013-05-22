@@ -5,6 +5,7 @@
     "animate.css": "latest",
     "jquery": "1.9.1",
     "bootstrap": "http://twitter.github.com/bootstrap/assets/bootstrap.zip",
-    "jquery.stellar": "~0.6.2"
+    "jquery.stellar": "~0.6.2",
+    "jquery.localScroll": "~1.2.8"
   }
 }
