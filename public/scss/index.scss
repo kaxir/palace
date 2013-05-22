@@ -1,3 +1,6 @@
+@import "compass/css3";
+@import "animation";
+
 body {
     overflow: auto;
     overflow-x: hidden;
@@ -14,6 +17,9 @@ body {
         height: 50%;
         overflow: hidden;
         background: white;
+
+        @include animation-duration(3s);
+        @include animation-delay(1s);
     }
 
     // logo size : 600x300
