@@ -5,6 +5,10 @@ $(document).ready(function() {
         var name = $(this).data('name');
         showMemberInfo( name );
     });
+
+    // animate
+    $(".logo-up").addClass("animated fadeOutUpBig");
+    $(".logo-down").addClass("animated fadeOutDownBig");
 });
 
 function resizeAll() {
@@ -13,23 +17,15 @@ function resizeAll() {
         h = $(window).height();
 
     setSlidesSize(h);
-    // setLogoSize(w, h);
-    // setFacebookCommentsSize(w);
+    setLogoSize(h);
+}
+
+function setLogoSize(h) {
+    $(".logo-intro").height( h );
 }
 
 function setSlidesSize(h) {
     $('.slides').height( h ); 
-}
-
-function setLogoSize(w, h) {
-    $('#logo').width(w)
-              .height(h);
-}
-
-function setFacebookCommentsSize(w) {
-    console.log( w );
-    var leftPartWidth = $('#contact .left').width();
-    $('.fb-comments').attr({ 'data-width' : w-leftPartWidth-1 })
 }
 
 function showMemberInfo( e ) {

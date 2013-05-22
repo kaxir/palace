@@ -1,0 +1,215 @@
+@import "compass/css3";
+@import "animation";
+
+body {
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.logo-intro {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    
+    .logo-up,
+    .logo-down {
+        position: relative;
+        height: 50%;
+        overflow: hidden;
+        background: white;
+
+        @include animation-duration(3s);
+        @include animation-delay(1.8s);
+    }
+
+    // logo size : 600x300
+    .logo-up {
+        .logo {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -300px;
+            margin-bottom: -150px;
+        }
+    }
+
+    .logo-down {
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -300px;
+            margin-top: -150px;
+        }
+    }
+}
+
+.left-navigation {
+    top: 30%;
+
+    ul {
+        li {
+            width: 200px;
+            text-align: right;
+            line-height: 30px;
+            font-size: 26px;
+            padding: 5px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            &.about {
+                // morning
+                background-color: #ffcc99;
+            }
+
+            &.works {
+                // sky
+                background-color: #66ccff;
+            }
+
+            &.opensource {
+                // afternoon
+                background-color: #e2802f;
+            }
+
+            &.contact {
+                // night
+                background-color: #333333;
+            }
+
+            &.star {
+                // midnight
+                background-color: #000000;
+            }
+        }
+    }
+}
+
+.slides {
+    width: 100%;
+}
+
+.slide-about {
+    background-color: #ffcc99;
+}
+
+.slide-works {
+    background-color: #66ccff;
+}
+
+.slide-opensource {
+    background-color: #e2802f;
+}
+
+.slide-contact {
+    background-color: #333333;
+}
+
+.slide-star {
+    background-color: #000000;
+}
+
+
+/////////
+
+#container {
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+#front {
+    background-color: #bb0104;
+    position: relative;
+
+    #logo {
+        position: absolute;
+        right: 0;
+        top: 25%;
+    }
+}
+
+#about {
+    background-color: #f08300;
+}
+
+#members {
+    background-color: #93b881;
+
+    ul {
+        margin: 0;
+    }
+
+    // Fix this later
+
+    li.each-member { 
+        float: left;
+        width: 250px;
+        height: 500px;
+        border: 1px solid white;
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 1;
+            transition: opacity 0.5s ease;
+            -webkit-transition: opacity 0.5s ease;
+        }
+    }
+
+    .eragonj {
+        background-image: url('../img/avatars/eragonj.jpeg');
+        background-position: 0 -10px;
+    }
+    .mioboo {
+        background-image: url('../img/avatars/mioboo.jpeg');
+        background-position: -150px 0px;
+    }
+    .bu {
+        background-image: url('../img/avatars/bu.jpeg');
+        background-position: -150px 0px;
+    }
+    .nuz {
+        background-image: url('../img/avatars/nuz.jpg');
+        background-position: -250px -360px;
+    }
+}
+
+#projects {
+
+    background-color: #e6b422;
+}
+
+#contact {
+
+    background-color: white;
+
+    .left {
+        width: 40%;
+        float: left;
+    }
+    
+    .right {
+        float:right;
+        border-left: 1px solid #EEE;
+    }
+    // background-color: #164a84;
+}
+
+.clear {
+    clear: both;
+}
+
+#claim {
+    margin: 0 auto;
+    margin-top: 2em;
+    font-size: 24px;
+    line-height: 24px;
+}
