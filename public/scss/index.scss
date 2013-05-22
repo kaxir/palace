@@ -10,6 +10,7 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 10;
     
     .logo-up,
     .logo-down {
@@ -44,6 +45,77 @@ body {
     }
 }
 
+.left-navigation {
+    top: 30%;
+
+    ul {
+        li {
+            width: 200px;
+            text-align: right;
+            line-height: 30px;
+            font-size: 26px;
+            padding: 5px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            &.about {
+                // morning
+                background-color: #ffcc99;
+            }
+
+            &.works {
+                // sky
+                background-color: #66ccff;
+            }
+
+            &.opensource {
+                // afternoon
+                background-color: #e2802f;
+            }
+
+            &.contact {
+                // night
+                background-color: #333333;
+            }
+
+            &.star {
+                // midnight
+                background-color: #000000;
+            }
+        }
+    }
+}
+
+.slides {
+    width: 100%;
+}
+
+.slide-about {
+    background-color: #ffcc99;
+}
+
+.slide-works {
+    background-color: #66ccff;
+}
+
+.slide-opensource {
+    background-color: #e2802f;
+}
+
+.slide-contact {
+    background-color: #333333;
+}
+
+.slide-star {
+    background-color: #000000;
+}
+
+
+/////////
+
 #container {
     margin: 0 auto;
 }
@@ -52,10 +124,6 @@ body {
     margin: 0 auto;
     padding-top: 50px;
     padding-left: 50px;
-}
-
-.slides {
-    width: 100%;
 }
 
 #front {

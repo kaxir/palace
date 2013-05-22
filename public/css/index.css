@@ -7,6 +7,7 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 10;
 }
 .logo-intro .logo-up,
 .logo-intro .logo-down {
@@ -40,6 +41,60 @@ body {
   margin-top: -150px;
 }
 
+.left-navigation {
+  top: 30%;
+}
+.left-navigation ul li {
+  width: 200px;
+  text-align: right;
+  line-height: 30px;
+  font-size: 26px;
+  padding: 5px;
+}
+.left-navigation ul li a {
+  text-decoration: none;
+  color: white;
+}
+.left-navigation ul li.about {
+  background-color: #ffcc99;
+}
+.left-navigation ul li.works {
+  background-color: #66ccff;
+}
+.left-navigation ul li.opensource {
+  background-color: #e2802f;
+}
+.left-navigation ul li.contact {
+  background-color: #333333;
+}
+.left-navigation ul li.star {
+  background-color: #000000;
+}
+
+.slides {
+  width: 100%;
+}
+
+.slide-about {
+  background-color: #ffcc99;
+}
+
+.slide-works {
+  background-color: #66ccff;
+}
+
+.slide-opensource {
+  background-color: #e2802f;
+}
+
+.slide-contact {
+  background-color: #333333;
+}
+
+.slide-star {
+  background-color: #000000;
+}
+
 #container {
   margin: 0 auto;
 }
@@ -48,10 +103,6 @@ body {
   margin: 0 auto;
   padding-top: 50px;
   padding-left: 50px;
-}
-
-.slides {
-  width: 100%;
 }
 
 #front {
