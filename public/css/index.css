@@ -43,15 +43,18 @@ body {
 }
 
 .left-navigation {
+  position: fixed;
   top: 35%;
   z-index: 9;
 }
 .left-navigation ul li {
-  width: 200px;
+  width: 180px;
   text-align: right;
   line-height: 30px;
   font-size: 26px;
   padding: 5px;
+  border-left-width: 10px;
+  border-left-style: solid;
 }
 .left-navigation ul li a {
   text-decoration: none;
@@ -60,18 +63,26 @@ body {
 }
 .left-navigation ul li.about {
   background-color: #ffcc99;
+  border-left-color: #ffcc99;
 }
 .left-navigation ul li.works {
   background-color: #66ccff;
+  border-left-color: #66ccff;
 }
 .left-navigation ul li.opensource {
   background-color: #e2802f;
+  border-left-color: #e2802f;
 }
 .left-navigation ul li.contact {
   background-color: #333333;
+  border-left-color: #333333;
 }
 .left-navigation ul li.star {
   background-color: #000000;
+  border-left-color: #000000;
+}
+.left-navigation ul li.active {
+  border-left-color: #ffffff;
 }
 
 .slides {
@@ -114,6 +125,18 @@ body {
   text-align: center;
   padding: 5px;
   color: #fff;
+}
+
+.parallax-item {
+  position: absolute;
+}
+.parallax-item.moon {
+  top: 30px;
+  left: 50px;
+}
+.parallax-item.cloud {
+  top: 50px;
+  right: 800px;
 }
 
 /*

@@ -47,16 +47,20 @@ body {
 }
 
 .left-navigation {
+    position: fixed;
     top: 35%;
     z-index: 9;
 
     ul {
         li {
-            width: 200px;
+            width: 180px;
             text-align: right;
             line-height: 30px;
             font-size: 26px;
             padding: 5px;
+
+            border-left-width: 10px;
+            border-left-style: solid;
 
             a {
                 text-decoration: none;
@@ -67,26 +71,35 @@ body {
             &.about {
                 // morning
                 background-color: #ffcc99;
+                border-left-color: #ffcc99;
             }
 
             &.works {
                 // sky
                 background-color: #66ccff;
+                border-left-color: #66ccff;
             }
 
             &.opensource {
                 // afternoon
                 background-color: #e2802f;
+                border-left-color: #e2802f;
             }
 
             &.contact {
                 // night
                 background-color: #333333;
+                border-left-color: #333333;
             }
 
             &.star {
                 // midnight
                 background-color: #000000;
+                border-left-color: #000000;
+            }
+
+            &.active {
+                border-left-color: #ffffff;
             }
         }
     }
@@ -137,6 +150,19 @@ body {
     }
 }
 
+.parallax-item {
+    position: absolute;
+
+    &.moon {
+        top: 30px;        
+        left: 50px;
+    }
+
+    &.cloud {
+        top: 50px;
+        right: 800px;
+    }
+}
 
 /////////
 
