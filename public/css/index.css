@@ -97,6 +97,18 @@ body {
 .slide-about {
   background-color: #ffcc99;
 }
+.slide-about .slide-content {
+  left: 50%;
+  top: 50%;
+  margin-left: -255px;
+  margin-top: -253px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 30px;
+}
+.slide-about .slide-content .heart {
+  color: #ff3333;
+}
 
 .slide-works {
   background-color: #66ccff;
@@ -104,6 +116,24 @@ body {
 
 .slide-opensource {
   background-color: #e2802f;
+}
+.slide-opensource .slide-content {
+  left: 30%;
+  top: 30%;
+}
+.slide-opensource .slide-content .opensource-wrapper {
+  width: 188px;
+  float: left;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+.slide-opensource .slide-content .opensource-description {
+  padding: 10px 0;
+  color: #ffffff;
+  text-align: left;
+}
+.slide-opensource .slide-content .opensource-link {
+  text-align: center;
 }
 
 .slide-contact {

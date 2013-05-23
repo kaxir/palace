@@ -117,6 +117,22 @@ body {
 
 .slide-about {
     background-color: #ffcc99;
+
+    .slide-content {
+        left: 50%;
+        top: 50%;
+
+        margin-left: -255px;
+        margin-top: -253px;
+
+        text-align: center;
+        line-height: 36px;
+        font-size: 30px;
+
+        .heart {
+            color: #ff3333;
+        }
+    }
 }
 
 .slide-works {
@@ -125,6 +141,30 @@ body {
 
 .slide-opensource {
     background-color: #e2802f;
+
+    .slide-content {
+
+        left: 30%;
+        top: 30%;
+
+        // 188 + 6*2 = 200
+        .opensource-wrapper {
+            width: 188px;
+            float: left;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .opensource-description {
+            padding: 10px 0;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .opensource-link {
+            text-align: center;
+        }
+    }
 }
 
 .slide-contact {
