@@ -5,6 +5,9 @@ $(document).ready(function() {
 
     // set scroll
     $.localScroll();
+
+    // set stellar
+    $.stellar();
     
     // animate
     var delay = 1800;
@@ -25,6 +28,7 @@ function resizeAll() {
 
     setSlidesSize(h);
     setLogoSize(h);
+    setLeftNav(h);
 }
 
 function setLogoSize(h) {
@@ -35,3 +39,39 @@ function setSlidesSize(h) {
     $('.slides').height( h ); 
 }
 
+function setLeftNav(h) {
+
+    var $leftNavList = $(".left-navigation li");
+
+    // set default nav-index
+    $(window).data("nav-index", function() {
+        return getCurrentSlideIndex();
+    });
+
+    // set scroll event
+    $(window).on("scroll", function() {
+        var currentTop = $(this).scrollTop(),
+            oldNavIndex = $(this).data("nav-index"),
+            newNavIndex = getCurrentSlideIndex();
+
+        if ( newNavIndex !== oldNavIndex ) {
+            $(this).data("nav-index", newNavIndex);
+
+            $leftNavList.removeClass("active");
+            $leftNavList.eq(newNavIndex).addClass("active");
+        }
+    });
+}
+
+function getCurrentSlideIndex() {
+
+    var h = $(window).height(),
+        currentTop = $(window).scrollTop();
+
+    // fix apple bouncing effect
+    if ( currentTop <= 0 ) { 
+        currentTop = 0;
+    }
+
+    return Math.floor( currentTop / h );
+}
